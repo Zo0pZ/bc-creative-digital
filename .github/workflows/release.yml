@@ -1,0 +1,38 @@
+name: Build theme release
+
+# Builds an installable bc-creative-digital.zip and attaches it to a GitHub
+# Release whenever a version tag is pushed, e.g.:
+#   git tag v1.0.0 && git push origin v1.0.0
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history so the tag is available to git archive)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build theme zip
+        run: |
+          git archive --format=zip \
+            --prefix=bc-creative-digital/ \
+            -o bc-creative-digital.zip \
+            "${GITHUB_REF_NAME}"
+          echo "Built bc-creative-digital.zip:"
+          unzip -l bc-creative-digital.zip | head -20
+
+      - name: Create release and upload the theme zip
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "BC Creative Digital ${{ github.ref_name }}"
+          files: bc-creative-digital.zip
+          generate_release_notes: true
