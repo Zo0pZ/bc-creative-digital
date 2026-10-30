@@ -1,0 +1,14 @@
+# Normalise line endings — theme is served on Linux, keep LF in the repo
+* text=auto eol=lf
+
+*.php   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+
+# Binary assets
+*.woff2 binary
+*.png   binary
+*.pdf   binary
+*.zip   binary
