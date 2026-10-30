@@ -1,0 +1,129 @@
+/*
+Theme Name: BC Creative Digital
+Theme URI: https://www.bencoetzee.co.uk
+Author: Ben Coetzee
+Author URI: https://bencoetzee.co.uk
+Description: The BC Creative Digital block theme for bencoetzee.co.uk — electric blue, acid-lime accent and ink-navy, with self-hosted Nunito & Nunito Sans, rounded corners and soft brand-tinted shadows. Built from the BC Creative Digital design system. Branding · Websites · SEO.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bc-creative-digital
+Tags: block-theme, full-site-editing, business, portfolio, blog, blue, one-column, custom-logo, custom-colors, editor-style, featured-images, block-patterns, wide-blocks, style-variations
+*/
+
+/* =====================================================================
+   BC Creative Digital — front-end & editor enhancements
+   Tokens come from theme.json (var:preset / var:custom). This file adds
+   only the interaction/polish that JSON styles cannot express.
+   ===================================================================== */
+
+/* Sticky, elevated site header */
+.bc-site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+/* Signature "electric hover" — buttons lift with a brand-blue shadow */
+.wp-block-button__link,
+.wp-element-button {
+	transition:
+		transform var(--wp--custom--duration--base, 200ms) var(--wp--custom--easing--standard, ease),
+		box-shadow var(--wp--custom--duration--base, 200ms) var(--wp--custom--easing--standard, ease),
+		background-color var(--wp--custom--duration--base, 200ms) ease,
+		color var(--wp--custom--duration--base, 200ms) ease;
+}
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+}
+.wp-block-button__link:active {
+	transform: translateY(0);
+	transition-duration: var(--wp--custom--duration--fast, 120ms);
+}
+
+/* Pill button style variation */
+.wp-block-button.is-style-pill .wp-block-button__link {
+	border-radius: var(--wp--custom--radius--pill, 9999px);
+}
+
+/* Cards lift on hover */
+.bc-card,
+.bc-work-card {
+	transition:
+		transform var(--wp--custom--duration--slow, 320ms) var(--wp--custom--easing--standard, ease),
+		box-shadow var(--wp--custom--duration--slow, 320ms) var(--wp--custom--easing--standard, ease);
+}
+.bc-card:hover,
+.bc-work-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--wp--preset--shadow--md);
+}
+.bc-card.bc-card-accent:hover {
+	box-shadow: var(--wp--preset--shadow--brand);
+}
+
+/* Work cards clip their gradient header to the rounded corners */
+.bc-work-card {
+	overflow: hidden;
+}
+
+/* Lime-tick list used in the hero card */
+ul.bc-check-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+ul.bc-check-list li {
+	position: relative;
+	padding-left: 1.9rem;
+}
+ul.bc-check-list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.6em;
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: var(--wp--custom--radius--pill, 9999px);
+	background: var(--wp--preset--color--accent, #c6f432);
+	box-shadow: 0 0 0 4px rgba(198, 244, 50, 0.22);
+}
+
+/* Navigation hover */
+.wp-block-navigation a:hover {
+	color: var(--wp--preset--color--brand-text);
+}
+
+/* Full-bleed inputs/search match the rounded brand */
+.wp-block-search__input,
+input[type="text"],
+input[type="email"],
+input[type="search"],
+textarea {
+	border-radius: var(--wp--custom--radius--sm, 8px);
+}
+
+/* Gentle hero entrance (motion-safe only) */
+@media (prefers-reduced-motion: no-preference) {
+	.bc-hero {
+		animation: bcFadeUp var(--wp--custom--duration--slower, 520ms) var(--wp--custom--easing--entrance, ease) both;
+	}
+	@keyframes bcFadeUp {
+		from { opacity: 0; transform: translateY(12px); }
+		to   { opacity: 1; transform: none; }
+	}
+}
+
+/* Make the custom logo scale down neatly on small screens */
+.bc-site-header .wp-block-site-logo img {
+	max-height: 40px;
+	width: auto;
+}
+@media (max-width: 600px) {
+	.bc-site-header .wp-block-site-logo img {
+		max-height: 34px;
+	}
+}
