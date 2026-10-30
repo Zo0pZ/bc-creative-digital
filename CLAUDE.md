@@ -34,7 +34,9 @@ assets/fonts/        Self-hosted Nunito & Nunito Sans (woff2)
 assets/images/       Logo, mark, favicons
 templates/           front-page, index, page, page-wide, page-landing, single, archive, search, 404
 parts/               header, footer
-patterns/            hero, services, why, portfolio, cta  (slug: bc-creative-digital/<name>)
+patterns/            hero, intro, services, advantage, cta  (slug: bc-creative-digital/<name>)
+                     Homepage mirrors the live site structure: Hero → Introduction →
+                     Core Services (6) → Competitive Advantage (4) → CTA.
 styles/              bc-dark.json  (dark style variation)
 ```
 

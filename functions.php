@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BC_CD_VERSION', '1.0.1' );
+define( 'BC_CD_VERSION', '1.0.2' );
 
 /**
  * Theme supports and editor styles.
