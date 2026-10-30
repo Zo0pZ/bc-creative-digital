@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BC_CD_VERSION', '1.0.5' );
+define( 'BC_CD_VERSION', '1.0.6' );
 
 /**
  * Theme supports and editor styles.
@@ -132,6 +132,7 @@ function bc_cd_setup_brand_assets() {
 		$logo_id = bc_cd_import_asset( 'assets/images/site-logo.png', 'BC Creative Digital logo' );
 		if ( $logo_id ) {
 			set_theme_mod( 'custom_logo', $logo_id );
+			update_option( 'site_logo', $logo_id );
 		}
 	}
 
@@ -143,6 +144,9 @@ function bc_cd_setup_brand_assets() {
 	}
 }
 add_action( 'after_switch_theme', 'bc_cd_setup_brand_assets' );
+// Also self-heal on admin load: if the logo/icon aren't set yet, set them.
+// The function guards on get_theme_mod/get_option, so this runs once then no-ops.
+add_action( 'admin_init', 'bc_cd_setup_brand_assets' );
 
 /**
  * Security headers (ported from the previous theme).
