@@ -1,10 +1,10 @@
-﻿/*
+/*
 Theme Name: BC Creative Digital
 Theme URI: https://www.bencoetzee.co.uk
 Author: Ben Coetzee
 Author URI: https://bencoetzee.co.uk
-Description: The BC Creative Digital block theme for bencoetzee.co.uk â€” electric blue, acid-lime accent and ink-navy, with self-hosted Nunito & Nunito Sans, rounded corners and soft brand-tinted shadows. Built from the BC Creative Digital design system. Branding Â· Websites Â· SEO.
-Version: 1.0.7
+Description: The BC Creative Digital block theme for bencoetzee.co.uk — electric blue, acid-lime accent and ink-navy, with self-hosted Nunito & Nunito Sans, rounded corners and soft brand-tinted shadows. Built from the BC Creative Digital design system. Branding · Websites · SEO.
+Version: 1.0.8
 Requires at least: 6.6
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -19,7 +19,7 @@ Tags: block-theme, full-site-editing, business, portfolio, blog, blue, one-colum
 */
 
 /* =====================================================================
-   BC Creative Digital â€” front-end & editor enhancements
+   BC Creative Digital — front-end & editor enhancements
    Tokens come from theme.json (var:preset / var:custom). This file adds
    only the interaction/polish that JSON styles cannot express.
    ===================================================================== */
@@ -31,7 +31,7 @@ Tags: block-theme, full-site-editing, business, portfolio, blog, blue, one-colum
 	z-index: 100;
 }
 
-/* Signature "electric hover" â€” buttons lift with a brand-blue shadow */
+/* Signature "electric hover" — buttons lift with a brand-blue shadow */
 .wp-block-button__link,
 .wp-element-button {
 	transition:
@@ -188,4 +188,4 @@ textarea {
 	color: var(--wp--preset--color--accent) !important;
 }
 
-/* Respect reduced motion — the blob and underline are static, so nothing to disable here */
+/* Respect reduced motion � the blob and underline are static, so nothing to disable here */

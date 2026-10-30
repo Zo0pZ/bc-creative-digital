@@ -1,6 +1,6 @@
-﻿<?php
+<?php
 /**
- * BC Creative Digital â€” theme functions.
+ * BC Creative Digital — theme functions.
  *
  * @package BC_Creative_Digital
  */
@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BC_CD_VERSION', '1.0.7' );
+define( 'BC_CD_VERSION', '1.0.8' );
 
 /**
  * Theme supports and editor styles.
@@ -187,7 +187,7 @@ add_action( 'send_headers', 'bc_cd_security_headers' );
  * The plugin's own consent.js intermittently 503s, leaving its functions
  * undefined. This self-contained script reads/writes the cookieadmin_consent
  * cookie, wires up Accept / Reject / Save, and hides the banner on return
- * visits â€” independent of the plugin's own JS.
+ * visits — independent of the plugin's own JS.
  */
 function bc_cd_cookieadmin_fallback() {
 	if ( is_admin() ) {
