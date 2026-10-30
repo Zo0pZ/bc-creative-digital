@@ -1,34 +1,34 @@
-{
+﻿{
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "BC Dark",
 	"settings": {
 		"color": {
 			"palette": [
-				{ "slug": "surface", "name": "Surface", "color": "#101227" },
-				{ "slug": "surface-raised", "name": "Surface raised", "color": "#1a1d3a" },
-				{ "slug": "surface-sunken", "name": "Surface sunken", "color": "#0a0b1a" },
-				{ "slug": "border", "name": "Border", "color": "#2a2e4e" },
-				{ "slug": "border-strong", "name": "Border strong", "color": "#3a3f66" },
+				{ "slug": "surface", "name": "Surface", "color": "#0B0F2A" },
+				{ "slug": "surface-raised", "name": "Surface raised", "color": "#161B38" },
+				{ "slug": "surface-sunken", "name": "Surface sunken", "color": "#070A1C" },
+				{ "slug": "border", "name": "Border", "color": "#2A3052" },
+				{ "slug": "border-strong", "name": "Border strong", "color": "#6B75A3" },
 				{ "slug": "ink", "name": "Ink", "color": "#f3f5fd" },
-				{ "slug": "ink-muted", "name": "Ink muted", "color": "#aeb3ce" },
-				{ "slug": "ink-subtle", "name": "Ink subtle", "color": "#888fb0" },
-				{ "slug": "brand", "name": "Brand blue", "color": "#2b3bff" },
-				{ "slug": "brand-strong", "name": "Brand strong", "color": "#4756ff" },
-				{ "slug": "brand-subtle", "name": "Brand subtle", "color": "#1c2048" },
-				{ "slug": "brand-text", "name": "Brand text", "color": "#9aa2ff" },
+				{ "slug": "ink-muted", "name": "Ink muted", "color": "#B2B8D4" },
+				{ "slug": "ink-subtle", "name": "Ink subtle", "color": "#9199BA" },
+				{ "slug": "brand", "name": "Brand blue", "color": "#1A3BFF" },
+				{ "slug": "brand-strong", "name": "Brand strong", "color": "#4756FF" },
+				{ "slug": "brand-subtle", "name": "Brand subtle", "color": "#1B2150" },
+				{ "slug": "brand-text", "name": "Brand text", "color": "#9AA6FF" },
 				{ "slug": "on-brand", "name": "On brand", "color": "#ffffff" },
-				{ "slug": "accent", "name": "Accent lime", "color": "#c6f432" },
-				{ "slug": "accent-strong", "name": "Accent strong", "color": "#d6ff4a" },
-				{ "slug": "accent-subtle", "name": "Accent subtle", "color": "#2b3610" },
-				{ "slug": "on-accent", "name": "On accent", "color": "#12142b" },
+				{ "slug": "accent", "name": "Accent lime", "color": "#A3FF1A" },
+				{ "slug": "accent-strong", "name": "Accent strong", "color": "#B6FF4D" },
+				{ "slug": "accent-subtle", "name": "Accent subtle", "color": "#27320A" },
+				{ "slug": "on-accent", "name": "On accent", "color": "#0B0F2A" },
 				{ "slug": "positive", "name": "Positive", "color": "#34c88c" },
 				{ "slug": "positive-subtle", "name": "Positive subtle", "color": "#10281f" },
 				{ "slug": "caution", "name": "Caution", "color": "#e7a93a" },
 				{ "slug": "caution-subtle", "name": "Caution subtle", "color": "#2e2410" },
 				{ "slug": "critical", "name": "Critical", "color": "#f26b73" },
 				{ "slug": "critical-subtle", "name": "Critical subtle", "color": "#2e1517" },
-				{ "slug": "on-status", "name": "On status", "color": "#0a0b1a" }
+				{ "slug": "on-status", "name": "On status", "color": "#070A1C" }
 			]
 		},
 		"shadow": {
@@ -36,7 +36,7 @@
 				{ "slug": "sm", "name": "Small", "shadow": "0 1px 2px rgba(0,0,0,0.5)" },
 				{ "slug": "md", "name": "Medium", "shadow": "0 6px 18px rgba(0,0,0,0.55)" },
 				{ "slug": "lg", "name": "Large", "shadow": "0 18px 48px rgba(0,0,0,0.6)" },
-				{ "slug": "brand", "name": "Brand lift", "shadow": "0 10px 28px rgba(43,59,255,0.45)" }
+				{ "slug": "brand", "name": "Brand lift", "shadow": "0 10px 28px rgba(26,59,255,0.45)" }
 			]
 		}
 	},

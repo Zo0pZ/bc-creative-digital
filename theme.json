@@ -1,4 +1,4 @@
-{
+﻿{
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"settings": {
@@ -13,35 +13,35 @@
 			"defaultGradients": false,
 			"defaultDuotone": false,
 			"palette": [
-				{ "slug": "surface", "name": "Surface", "color": "#f6f7fb" },
+				{ "slug": "surface", "name": "Surface", "color": "#F4F5F8" },
 				{ "slug": "surface-raised", "name": "Surface raised", "color": "#ffffff" },
-				{ "slug": "surface-sunken", "name": "Surface sunken", "color": "#e7eaf3" },
-				{ "slug": "border", "name": "Border", "color": "#dde1ee" },
-				{ "slug": "border-strong", "name": "Border strong", "color": "#c2c8dd" },
-				{ "slug": "ink", "name": "Ink", "color": "#12142b" },
-				{ "slug": "ink-muted", "name": "Ink muted", "color": "#555a78" },
-				{ "slug": "ink-subtle", "name": "Ink subtle", "color": "#6e7493" },
-				{ "slug": "brand", "name": "Brand blue", "color": "#2b3bff" },
-				{ "slug": "brand-strong", "name": "Brand strong", "color": "#1e2be0" },
-				{ "slug": "brand-subtle", "name": "Brand subtle", "color": "#e8eaff" },
-				{ "slug": "brand-text", "name": "Brand text", "color": "#2130d6" },
+				{ "slug": "surface-sunken", "name": "Surface sunken", "color": "#E7E9F1" },
+				{ "slug": "border", "name": "Border", "color": "#DADDEA" },
+				{ "slug": "border-strong", "name": "Border strong", "color": "#858CA8" },
+				{ "slug": "ink", "name": "Ink", "color": "#0B0F2A" },
+				{ "slug": "ink-muted", "name": "Ink muted", "color": "#474D6B" },
+				{ "slug": "ink-subtle", "name": "Ink subtle", "color": "#5A6180" },
+				{ "slug": "brand", "name": "Brand blue", "color": "#1A3BFF" },
+				{ "slug": "brand-strong", "name": "Brand strong", "color": "#1530DB" },
+				{ "slug": "brand-subtle", "name": "Brand subtle", "color": "#E6E9FF" },
+				{ "slug": "brand-text", "name": "Brand text", "color": "#1A3BFF" },
 				{ "slug": "on-brand", "name": "On brand", "color": "#ffffff" },
-				{ "slug": "accent", "name": "Accent lime", "color": "#c6f432" },
-				{ "slug": "accent-strong", "name": "Accent strong", "color": "#aee01c" },
-				{ "slug": "accent-subtle", "name": "Accent subtle", "color": "#f1fbce" },
-				{ "slug": "on-accent", "name": "On accent", "color": "#12142b" },
-				{ "slug": "positive", "name": "Positive", "color": "#1a9d68" },
+				{ "slug": "accent", "name": "Accent lime", "color": "#A3FF1A" },
+				{ "slug": "accent-strong", "name": "Accent strong", "color": "#8CDF00" },
+				{ "slug": "accent-subtle", "name": "Accent subtle", "color": "#ECFFC9" },
+				{ "slug": "on-accent", "name": "On accent", "color": "#0B0F2A" },
+				{ "slug": "positive", "name": "Positive", "color": "#157A52" },
 				{ "slug": "positive-subtle", "name": "Positive subtle", "color": "#def3ea" },
-				{ "slug": "caution", "name": "Caution", "color": "#b7791f" },
+				{ "slug": "caution", "name": "Caution", "color": "#9A6410" },
 				{ "slug": "caution-subtle", "name": "Caution subtle", "color": "#fbf0d8" },
-				{ "slug": "critical", "name": "Critical", "color": "#d7343f" },
+				{ "slug": "critical", "name": "Critical", "color": "#C62A34" },
 				{ "slug": "critical-subtle", "name": "Critical subtle", "color": "#fbe3e4" },
 				{ "slug": "on-status", "name": "On status", "color": "#ffffff" }
 			],
 			"gradients": [
-				{ "slug": "brand-sweep", "name": "Brand sweep", "gradient": "linear-gradient(135deg, #2b3bff 0%, #1e2be0 100%)" },
-				{ "slug": "ink-sweep", "name": "Ink sweep", "gradient": "linear-gradient(160deg, #1a1d3a 0%, #12142b 100%)" },
-				{ "slug": "accent-spark", "name": "Accent spark", "gradient": "linear-gradient(120deg, #2b3bff 0%, #2b3bff 70%, #c6f432 100%)" }
+				{ "slug": "brand-sweep", "name": "Brand sweep", "gradient": "linear-gradient(135deg, #1A3BFF 0%, #1530DB 100%)" },
+				{ "slug": "ink-sweep", "name": "Ink sweep", "gradient": "linear-gradient(160deg, #161B38 0%, #0B0F2A 100%)" },
+				{ "slug": "accent-spark", "name": "Accent spark", "gradient": "linear-gradient(120deg, #1A3BFF 0%, #1A3BFF 70%, #A3FF1A 100%)" }
 			]
 		},
 		"typography": {
@@ -115,10 +115,10 @@
 		"shadow": {
 			"defaultPresets": false,
 			"presets": [
-				{ "slug": "sm", "name": "Small", "shadow": "0 1px 2px rgba(18,20,43,0.08)" },
-				{ "slug": "md", "name": "Medium", "shadow": "0 6px 16px rgba(18,20,43,0.10)" },
-				{ "slug": "lg", "name": "Large", "shadow": "0 18px 44px rgba(18,20,43,0.16)" },
-				{ "slug": "brand", "name": "Brand lift", "shadow": "0 10px 26px rgba(43,59,255,0.30)" }
+				{ "slug": "sm", "name": "Small", "shadow": "0 1px 2px rgba(11,15,42,0.08)" },
+				{ "slug": "md", "name": "Medium", "shadow": "0 6px 16px rgba(11,15,42,0.10)" },
+				{ "slug": "lg", "name": "Large", "shadow": "0 18px 44px rgba(11,15,42,0.16)" },
+				{ "slug": "brand", "name": "Brand lift", "shadow": "0 10px 26px rgba(26,59,255,0.30)" }
 			]
 		},
 		"custom": {
