@@ -4,6 +4,16 @@ All notable changes to the BC Creative Digital theme are recorded here.
 The format follows [Keep a Changelog](https://keepachangelog.com/); this theme
 uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] — 2026-11-04
+
+### Fixed
+
+- **Stylesheet enqueue version now tracks the theme header.** `BC_CD_VERSION`
+  was hard-coded to `1.0.10`, so `style.css` loaded as `?ver=1.0.10` and browsers
+  kept serving the stale stylesheet after an update. It now reads
+  `wp_get_theme()->get( 'Version' )`, so the cache-busting version always matches
+  the `style.css` header — bumping the header is now the only step needed.
+
 ## [1.1.0] — 2026-11-04
 
 A homepage conversion pass following a design critique of the landing page. The
