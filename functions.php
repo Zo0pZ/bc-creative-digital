@@ -74,28 +74,31 @@ function bc_cd_register_block_styles() {
 				'label' => __( 'Pill', 'bc-creative-digital' ),
 			)
 		);
-		register_block_style(
-			'core/group',
-			array(
-				'name'         => 'blue-card',
-				'label'        => __( 'Blue card', 'bc-creative-digital' ),
-				'inline_style' => '
-					.wp-block-group.is-style-blue-card {
-						background-color: #2563eb;
-						border-radius: 16px;
-						padding: 2rem;
-					}
-					.wp-block-group.is-style-blue-card,
-					.wp-block-group.is-style-blue-card :where(p, li, h1, h2, h3, h4, h5, h6) {
-						color: #ffffff;
-					}
-					.wp-block-group.is-style-blue-card a {
-						color: #ffffff;
-						text-decoration: underline;
-					}
-				',
-			)
-		);
+		$blue_card_css = '
+			.is-style-blue-card {
+				background-color: #2563eb !important;
+				border-radius: 16px;
+				padding: 2rem;
+			}
+			.is-style-blue-card,
+			.is-style-blue-card :where(p, li, h1, h2, h3, h4, h5, h6) {
+				color: #ffffff !important;
+			}
+			.is-style-blue-card a {
+				color: #ffffff;
+				text-decoration: underline;
+			}
+		';
+		foreach ( array( 'core/group', 'core/list' ) as $block_name ) {
+			register_block_style(
+				$block_name,
+				array(
+					'name'         => 'blue-card',
+					'label'        => __( 'Blue card', 'bc-creative-digital' ),
+					'inline_style' => $blue_card_css,
+				)
+			);
+		}
 	}
 }
 add_action( 'init', 'bc_cd_register_block_styles' );
