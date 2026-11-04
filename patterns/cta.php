@@ -20,7 +20,7 @@
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--60)">
 <!-- wp:button {"backgroundColor":"accent","textColor":"on-accent","style":{"border":{"radius":"12px"},"spacing":{"padding":{"top":"0.9rem","bottom":"0.9rem","left":"1.75rem","right":"1.75rem"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-on-accent-color has-accent-background-color has-text-color has-background wp-element-button" href="/contact/" style="border-radius:12px;padding-top:0.9rem;padding-right:1.75rem;padding-bottom:0.9rem;padding-left:1.75rem">Get a free website review</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-on-accent-color has-accent-background-color has-text-color has-background wp-element-button" href="/contact/" style="border-radius:12px;padding-top:0.9rem;padding-right:1.75rem;padding-bottom:0.9rem;padding-left:1.75rem">Get my free website review</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

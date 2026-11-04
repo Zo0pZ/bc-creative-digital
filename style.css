@@ -4,7 +4,7 @@ Theme URI: https://www.bencoetzee.co.uk
 Author: Ben Coetzee
 Author URI: https://bencoetzee.co.uk
 Description: The BC Creative Digital block theme for bencoetzee.co.uk — electric blue, acid-lime accent and ink-navy, with self-hosted Nunito & Nunito Sans, rounded corners and soft brand-tinted shadows. Built from the BC Creative Digital design system. Branding · Websites · SEO.
-Version: 1.0.10
+Version: 1.1.0
 Requires at least: 6.6
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -215,4 +215,59 @@ textarea {
 .bc-site-footer a:not(.wp-block-button__link):hover {
 	color: var(--wp--preset--color--accent);
 	text-decoration: underline;
+}
+
+
+/* =====================================================================
+   Proof section — the person, the promise, the credentials
+   ===================================================================== */
+
+/* Monogram portrait tile (placeholder for a real photo of Ben) */
+.bc-proof .bc-portrait {
+	aspect-ratio: 1 / 1;
+	max-width: 300px;
+	display: grid;
+	place-items: center;
+	box-shadow: var(--wp--preset--shadow--lg);
+}
+.bc-proof .bc-portrait-mark {
+	margin: 0;
+	line-height: 1;
+}
+@media (max-width: 781px) {
+	.bc-proof .bc-portrait {
+		margin-inline: auto;
+	}
+}
+
+/* Keep credential / trust pills tidy as they wrap */
+.bc-trust-row,
+.bc-credentials {
+	align-items: center;
+}
+
+
+/* =====================================================================
+   Focal motion — the hero's lime "signal" draws itself in on load
+   (motion-safe only; static full underline otherwise)
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+	.bc-hero h1 mark {
+		animation: bcUnderlineDraw var(--wp--custom--duration--slower, 520ms) var(--wp--custom--easing--entrance, ease) 460ms both;
+	}
+	@keyframes bcUnderlineDraw {
+		from { background-size: 0 0.34em; }
+		to   { background-size: 100% 0.34em; }
+	}
+}
+
+
+/* =====================================================================
+   Footer divider — tokenised (replaces a hard-coded hex in markup)
+   ===================================================================== */
+.bc-site-footer .wp-block-separator.is-style-wide {
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.10);
+	background: transparent;
+	height: 0;
 }

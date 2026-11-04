@@ -28,7 +28,7 @@
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--60)">
 <!-- wp:button {"backgroundColor":"brand","textColor":"on-brand","style":{"border":{"radius":"12px"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-on-brand-color has-brand-background-color has-text-color has-background wp-element-button" href="/contact/" style="border-radius:12px">Let's work together</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-on-brand-color has-brand-background-color has-text-color has-background wp-element-button" href="/contact/" style="border-radius:12px">Get my free website review</a></div>
 <!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

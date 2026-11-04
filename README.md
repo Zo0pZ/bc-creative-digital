@@ -28,19 +28,21 @@ Nothing is deleted. You can switch back to your old theme at any time.
 - The **site logo** and **favicon (site icon)** are set automatically from the bundled
   brand assets — *only if you don't already have them set*. Existing choices are never overwritten.
 - The **homepage** uses the new `front-page` template: a full BC Creative Digital landing
-  page (hero → services → enterprise-standards band → selected work → CTA). This takes
+  page (hero → introduction → core services → why me → the person & proof → CTA). This takes
   precedence over any static front page while this theme is active.
 
 ## After activating — a few things to check in the Site Editor
 
 Go to **Appearance → Editor**:
 
-- **Navigation** (in the Header): the menu uses `Home / Portfolio / About / Contact` as
-  custom links. If your page slugs differ, swap them for your real pages.
-- **Selected work** grid: the six project cards reuse names pulled from your current site
-  as placeholders (The Heritage, Fat Goose Catering, Visual Statements, Bottled Lightning,
-  William Richard Palmer, The Oak and Glass). Replace the text and drop in real screenshots
-  under **Editor → Patterns → BC Creative Digital → Featured Work grid**.
+- **Navigation**: the header and footer menus now list the same set of pages as custom links
+  (`Home · Services · Portfolio · About · Articles · Contact`). If your page slugs differ, swap
+  them for your real pages.
+- **The Person & Proof** section: the `proof` pattern puts Ben's name, an honest promise and
+  verifiable credentials just before the closing CTA. The portrait is a placeholder monogram —
+  replace it with a real photo, and add real testimonials, client logos or project screenshots
+  in the commented slot at the bottom of the pattern (**Editor → Patterns → BC Creative Digital
+  → The Person & Proof**). No fabricated client names ship in this theme.
 - **Dark mode:** a **"BC Dark"** style variation is included — **Editor → Styles →
   Browse styles** to try it.
 - **Contact details** in the footer (email, phone, address) are pre-filled — confirm they're current.
@@ -49,7 +51,7 @@ Go to **Appearance → Editor**:
 
 The homepage sections are editable **patterns**. Open **Appearance → Editor → Templates →
 Front Page**, or edit the individual patterns under **Editor → Patterns → BC Creative Digital**:
-*Home Hero, Services Grid, Why — Enterprise Standards band, Featured Work grid, CTA band*.
+*Home Hero, Introduction, Core Services Grid, Why Me, The Person & Proof, CTA band*.
 
 ## What's inside
 
@@ -64,7 +66,7 @@ bc-creative-digital/
 │   └── images/          Logo, mark, favicons
 ├── templates/           front-page, index, page, page-wide, page-landing, single, archive, search, 404
 ├── parts/               header, footer
-├── patterns/            hero, services, why, portfolio, cta
+├── patterns/            hero, intro, services, advantage, proof, cta
 └── styles/              bc-dark.json (dark style variation)
 ```
 
@@ -80,4 +82,4 @@ bc-creative-digital/
 
 - WordPress **6.6+**, PHP **7.4+**.
 
-Version 1.0.0 · Built for Ben Coetzee.
+Version 1.1.0 · Built for Ben Coetzee. · See [CHANGELOG.md](CHANGELOG.md) for release notes.
