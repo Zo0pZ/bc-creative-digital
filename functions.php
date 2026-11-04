@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BC_CD_VERSION', '1.0.10' );
+define( 'BC_CD_VERSION', wp_get_theme()->get( 'Version' ) );
 
 /**
  * Theme supports and editor styles.
